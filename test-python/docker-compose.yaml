@@ -1,0 +1,10 @@
+version: '2'
+services:
+  hello.world:
+    image: hello-node
+  test:
+    build: .
+    links:
+     - hello.world
+    depends_on:
+     - hello.world
