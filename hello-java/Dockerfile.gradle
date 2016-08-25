@@ -1,3 +1,5 @@
 from anapsix/alpine-java:8_jdk
-COPY . /src
+COPY gradlew /src/gradlew
+COPY gradle /src/gradle
+COPY build.gradle /src/build.gradle
 RUN /src/gradlew 
