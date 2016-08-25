@@ -1,0 +1,11 @@
+docker pull ubuntu
+docker images
+docker run -it ubuntu /bin/bash
+docker save ubuntu > /tmp/ubs
+docker rmi ubuntu
+docker load < /tmp/ubs
+docker search java
+docker run -it ubuntu /bin/bash - change a file - install python
+docker commit (previous container)
+docker tag $(new image id) mything
+docker run -it mything /bin/bash
